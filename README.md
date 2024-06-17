@@ -9,5 +9,5 @@ bash -c "bash <(curl -s https://raw.githubusercontent.com/qrcpp/foxvim/main/inst
 
 ## Documentation
 - v1-beta
-  - [English](https://github.com/qrcpp/foxvim/v1-beta/en.md)
-  - [Russian](https://github.com/qrcpp/foxvim/v1-beta/ru.md)
+  - [English](https://github.com/qrcpp/foxvim/blob/main/v1-beta/en.md)
+  - [Russian](https://github.com/qrcpp/foxvim/blob/main/v1-beta/ru.md)
