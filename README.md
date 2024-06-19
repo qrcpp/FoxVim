@@ -1,6 +1,6 @@
-# foxvim
+# FoxVim
 
-Welcome to the world of foxvim, where every step forward is a step towards self-expression. Here we don't offer you a ready-made solution; we offer you freedom. Freedom to choose, freedom to create, freedom to make your own choices.
+Welcome to the world of FoxVim, where every step forward is a step towards self-expression. Here we don't offer you a ready-made solution; we offer you freedom. Freedom to choose, freedom to create, freedom to make your own choices.
 
 ## Installation
 ```bash

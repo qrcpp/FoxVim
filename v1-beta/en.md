@@ -6,7 +6,7 @@
   - ["Shackles" of Convenience](#shackles-of-convenience)
   - [The Illusion of Customization](#the-illusion-of-customization)
   - [The Search for True Freedom as the Eternal Quest for Identity](#the-search-for-true-freedom-as-the-eternal-quest-for-identity)
-  - [foxvim: Liberation from the "Shackles" of Convenience](#foxvim-liberation-from-the-shackles-of-convenience)
+  - [FoxVim: Liberation from the "Shackles" of Convenience](#foxvim-liberation-from-the-shackles-of-convenience)
 - [Migration](#migration)
 - [Quickstart](#quickstart)
 - [Structure](#structure)
@@ -31,11 +31,11 @@ We strive for true freedom, for the ability to create a tool that reflects our i
 
 Freedom is not the choice from pre-defined options. It is the possibility to create something new, something of our own, reflecting our individuality. We don't want to be clones; we want to be ourselves, and our tools should reflect this individuality. Freedom is not just the right to choose, but also the right to create. But in this creation, there is fear: "What if we create something wrong, something unsuccessful?".
 
-### foxvim: Liberation from the "Shackles" of Convenience:
+### FoxVim: Liberation from the "Shackles" of Convenience:
 
-foxvim is not just a setup, but a philosophy. A philosophy of freedom, customization, and convenience. It does not offer a ready solution but gives the opportunity to independently choose your own path. It provides freedom of choice and control over your own environment. But freedom always carries a risk: "What if we make the wrong choice?".
+FoxVim is not just a setup, but a philosophy. A philosophy of freedom, customization, and convenience. It does not offer a ready solution but gives the opportunity to independently choose your own path. It provides freedom of choice and control over your own environment. But freedom always carries a risk: "What if we make the wrong choice?".
 
-foxvim is an open system that does not try to impose its will. It provides tools for creating your own environment. We can adjust everything, from the color scheme to the behavior of plugins. It's not just a set of settings; it's the opportunity to create your own world. But even in this possibility, there is anxiety: what if we create a world in which we are not comfortable?..
+FoxVim is an open system that does not try to impose its will. It provides tools for creating your own environment. We can adjust everything, from the color scheme to the behavior of plugins. It's not just a set of settings; it's the opportunity to create your own world. But even in this possibility, there is anxiety: what if we create a world in which we are not comfortable?..
 
 ## Migration
 ```bash
