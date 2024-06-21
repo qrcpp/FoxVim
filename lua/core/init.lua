@@ -2,7 +2,7 @@
 require("custom")
 
 ---------- plugin manager ----------
-require("core." .. (require("foxrc").plugin_manager == "mini" and "mini" or "lazy"))
+require("core." .. (require("foxrc").pkg.pm == "mini" and "mini" or "lazy"))
 
 ---------- configuration ----------
 require("config")

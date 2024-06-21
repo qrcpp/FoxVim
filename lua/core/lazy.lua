@@ -14,7 +14,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 ---------- lazyvim options ----------
-require("lazy").setup("plugin", {
+require("lazy").setup(require("foxrc").pkg.dir, {
 	defaults = { lazy = false },
 	ui = {
 		icons = {

@@ -19,7 +19,7 @@ end
 require("mini.deps").setup({ path = { package = path_package } })
 
 ---------- include plugins ----------
-local file = vim.fn.readdir(vim.fn.stdpath("config") .. "/lua/plugin")
+local file = vim.fn.readdir(vim.fn.stdpath("config") .. "/lua/"..require("foxrc").pkg.dir)
 for _, plugin in ipairs(file) do
 	require("plugin." .. plugin:gsub(".lua", ""))
 end
