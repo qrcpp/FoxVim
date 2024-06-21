@@ -1,47 +1,37 @@
 #!/usr/bin/env bash
 
-version=(v1-beta)
-select=0
-error=0
+version_list=(v1-beta)
+selection=0
 
 while true; do
   clear
   echo "Select version(note: beta unstable and used for testing new features):"
   echo
   
-  for index in "${!version[@]}"; do
-    if [ "$index" -eq "$select" ]; then
-      echo -e "> \e[7m${version[$index]}\e[0m"
+  for i in "${!version_list[@]}"; do
+    if [ "$i" -eq "$selection" ]; then
+      echo -e "> \e[7m${version_list[$i]}\e[0m"
     else
-      echo "  ${version[$index]}"
+      echo "  ${version_list[$i]}"
     fi
   done
 
   echo
   echo "< (↓/j)Down, (↑/k)Up, (Enter)Install >"
 
-  if [ "$error" -eq 1 ]; then
-    echo "[!] illegal key -- $key"
-    error=0
-  fi
-
-  read -rsn1 key
-  case "$key" in
-    [AKk]*)
-      ((select--))
-      [ "$select" -lt 0 ] && select=$((${#version[@]} - 1))
+  read -r -n 1 keycode
+  case "$keycode" in
+    [$'\e[B'Jj]*) # Down arrow
+      ((selection++))
+      selection=$((selection >= ${#version_list[@]} ? 0 : selection))
       ;;
-    [Bjj]*)
-      ((select++))
-      [ "$select" -ge ${#version[@]} ] && select=0
+    [$'\e[A'Kk]*) # Up arrow
+      ((selection--))
+      selection=$((selection < 0 ? ${#version_list[@]} - 1 : selection))
       ;;
-    '')
-      echo
-      bash <(curl https://raw.githubusercontent.com/qrcpp/foxvim/main/${version[select]}/build)
+    '') # Enter
+      bash <(curl https://raw.githubusercontent.com/qrcpp/foxvim/main/${version_list[selection]}/build)
       exit
-      ;;
-    *)
-      error=1
       ;;
   esac
 done
